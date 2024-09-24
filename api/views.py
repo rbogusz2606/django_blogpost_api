@@ -16,7 +16,7 @@ from rest_framework.views import APIView
 @permission_classes([IsAuthenticated])
 @api_view(['GET'])
 def endpoints(request):
-    return Response ("api/blogposts/ , api/blogposts/<uuid:pk>/, api/signup/, api/login/")
+    return Response ("/blogposts/ , /blogposts/<uuid:pk>/, /signup/, /login/")
 
 class CustomPagination(PageNumberPagination):
     page_size = 5
